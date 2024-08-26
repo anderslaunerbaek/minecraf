@@ -28,4 +28,6 @@ jobs:
           context: "{{defaultContext}}"
           push: true
           tags: ${{ secrets.DOCKERHUB_USER }}/minecraft:latest
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.DOCKERHUB_TOKEN }}
           
